@@ -58,6 +58,7 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
+  use "jeffkreeftmeijer/vim-numbertoggle"
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
@@ -93,6 +94,14 @@ return packer.startup(function(use)
 
   -- Git
   use "lewis6991/gitsigns.nvim"
+  use "tpope/vim-fugitive"            -- allows git commands in vim session
+  use "airblade/vim-gitgutter" -- shows git changes in gutter
+
+  -- Python workflow
+  use "benmills/vimux"
+  use "greghor/vim-pyShell"
+  use "julienr/vim-cellmode"
+  use "cjrh/vim-conda"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
